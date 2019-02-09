@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FC0"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/lastcheckedL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:text="Last checked on :"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/lastchecked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/lastcheckedL"
+            android:text="25/01/2019"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/centerShim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/colon"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/fromDateL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_toStartOf="@+id/centerShim"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="@string/from_date"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fromDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/centerShim"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="16/12/018"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/centerShimToDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/colon"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/toDateL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_toStartOf="@+id/centerShimToDate"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="@string/to_date"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/toDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/centerShimToDate"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="12/01/2019"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/centerShim3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/colon"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/localCallsL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_toStartOf="@+id/centerShim3"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="@string/local_min"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/localCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/centerShim3"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="100 mins"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/centerShim4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/colon"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/totalCallL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_toStartOf="@+id/centerShim4"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Total(International) Calls"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/centerShim4"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="700 mins"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/centerShim5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/colon"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/internationalCallsL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_toStartOf="@+id/centerShim5"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="International Calls (StarHUB)"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/internationalCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/centerShim5"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text=""
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/centerShim6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/colon"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/remainingCallsL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_toStartOf="@+id/centerShim6"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Remaining Calls"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/remainingCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/centerShim6"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text=""
+            android:textStyle="italic" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CallDuration</string>
+    <string name="colon">:</string>
+    <string name="from_date">FROM DATE</string>
+    <string name="to_date">TO DATE</string>
+    <string name="local_min">Local Minutes</string>
+</resources>
