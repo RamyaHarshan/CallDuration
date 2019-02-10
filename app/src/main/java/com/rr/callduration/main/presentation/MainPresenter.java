@@ -22,6 +22,7 @@ public class MainPresenter<V extends MainMvpView>
         super(dataManager, compositeDisposable);
     }
 
+    /* From date & To date will be calculated */
     @Override
     public void setDateIntoFields(){
         MainData mainData = new MainData();
@@ -47,12 +48,15 @@ public class MainPresenter<V extends MainMvpView>
         mainData.setToDate(todayDateStr);
         getMvpView().onDateReceived(mainData);
     }
+
+    /* It is used to retrieve call log time and calculate the local & internationational call duartion */
     @Override
     public void readCallLogTime(String fromDate, String toDate) {
         MainData mainData = getDataManager().readCallLogTime(fromDate,toDate);
         getMvpView().onCallDataReceived(mainData);
     }
 
+    /* Current Date & Time will be store in DB */
     public void storeRecentCheckedTime(long timeNow){
         try {
             getDataManager().storeRecentAccessTime(timeNow);
@@ -60,6 +64,8 @@ public class MainPresenter<V extends MainMvpView>
             e.printStackTrace();
         }
     }
+
+    /* It is used to retrieve the last access time  */
     public void readRecentCheckedTime(){
 
         getMvpView().onLastCheckedReceived(getDataManager().getRecentAccessTime());
