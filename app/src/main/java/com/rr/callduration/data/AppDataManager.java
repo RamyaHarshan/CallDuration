@@ -8,6 +8,7 @@ import com.rr.callduration.main.model.MainData;
 
 import javax.inject.Inject;
 
+/* All the Shared Preference, Database related methods will be specified here  */
 public class AppDataManager implements DataManager{
 
     private static final String TAG = AppDataManager.class.getSimpleName();

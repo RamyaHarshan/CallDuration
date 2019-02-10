@@ -1,4 +1,4 @@
-package com.rr.callduration.main.model;
+package com.rr.callduration.data.db;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;

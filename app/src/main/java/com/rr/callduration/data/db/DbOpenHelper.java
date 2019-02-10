@@ -5,7 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.rr.callduration.di.scope.ApplicationContext;
 import com.rr.callduration.di.scope.DatabaseInfo;
-import com.rr.callduration.main.model.CheckedTimeData;
 import com.rr.callduration.main.model.DaoMaster;
 
 import javax.inject.Inject;
@@ -27,9 +26,9 @@ public class DbOpenHelper extends DaoMaster.OpenHelper {
         }
     }
 
-    public Long insertCheckedTime(CheckedTimeData checkedTimeData){
+    /*public Long insertCheckedTime(CheckedTimeData checkedTimeData){
         //long id = ((DemoApplication)getApplication()).getDaoSession().getCheckedTimeDataDao().insert(checkedTimeData);
 
         return Long.valueOf(0);
-    }
+    }*/
 }

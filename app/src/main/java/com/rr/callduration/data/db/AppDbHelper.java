@@ -6,7 +6,6 @@ import android.provider.CallLog;
 
 import com.rr.callduration.DemoApplication;
 import com.rr.callduration.di.scope.ApplicationContext;
-import com.rr.callduration.main.model.CheckedTimeData;
 import com.rr.callduration.main.model.MainData;
 
 import java.text.DateFormat;

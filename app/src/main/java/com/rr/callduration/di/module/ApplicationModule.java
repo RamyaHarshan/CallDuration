@@ -2,7 +2,6 @@ package com.rr.callduration.di.module;
 
 import android.app.Application;
 import android.content.Context;
-import android.content.SharedPreferences;
 
 import com.rr.callduration.data.AppDataManager;
 import com.rr.callduration.data.DataManager;
@@ -39,7 +38,7 @@ public class ApplicationModule {
     @Provides
     @DatabaseInfo
     String provideDatabaseName() {
-        return "demo-dagger.db";
+        return "callduration-demo.db";
     }
 
     @Provides
@@ -60,8 +59,8 @@ public class ApplicationModule {
         return appDbHelper;
     }
 
-    @Provides
+    /*@Provides
     SharedPreferences provideSharedPrefs() {
         return mApplication.getSharedPreferences("demo-prefs", Context.MODE_PRIVATE);
-    }
+    }*/
 }

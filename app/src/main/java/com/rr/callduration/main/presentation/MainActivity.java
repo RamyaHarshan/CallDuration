@@ -117,10 +117,8 @@ public class MainActivity extends BaseActivity implements MainMvpView {
                 if (grantResults.length > 0) {
                     boolean readContact = grantResults[0] == PackageManager.PERMISSION_GRANTED;
                     if (readContact) {
-//                        presenter.readCallLogTime(fromDate.getText().toString(), toDate.getText().toString());
+                        mPresenter.readCallLogTime(fromDate.getText().toString(),toDate.getText().toString());
                     } else {
-                        //                  new CommonClass(this).displayToast("Permission Denied, You cannot read the contacts.");
-
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                             if (shouldShowRequestPermissionRationale(READ_CALL_LOG)) {
                                 showMessageOKCancel("You need to allow access to the permission",
